@@ -359,8 +359,8 @@ function App() {
         <section id="blog" className="blog-section">
           <div className="container">
             <div className="section-header">
-              <h2 className="section-title">Culinary Chronicles</h2>
-              <p className="section-subtitle">Delve into our chef's notes, discover the secrets behind our recipes, and read about our journey in the world of fine dining.</p>
+              <h2 className="section-title">React Chronicles</h2>
+              <p className="section-subtitle">Deep dive into the world of React. From core concepts to advanced patterns, stay updated with the latest in the React ecosystem.</p>
             </div>
             <div className="blog-grid">
               {blogData.map((blog) => (
