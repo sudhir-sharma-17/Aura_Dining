@@ -2,6 +2,7 @@ export const blogData = [
   {
     id: 1,
     title: "Understanding React Server Components (RSC)",
+    slug: "understanding-react-server-components",
     date: "May 15, 2026",
     author: "Dan Abramov Jr.",
     category: "Architecture",
@@ -12,6 +13,7 @@ export const blogData = [
   {
     id: 2,
     title: "Mastering the UseEffect Hook: Common Pitfalls",
+    slug: "mastering-the-useeffect-hook",
     date: "May 10, 2026",
     author: "Sarah Drasner",
     category: "Hooks",
@@ -22,6 +24,7 @@ export const blogData = [
   {
     id: 3,
     title: "State Management in 2026: Beyond Redux",
+    slug: "state-management-in-2026",
     date: "May 05, 2026",
     author: "Kent C. Dodds",
     category: "State Management",
@@ -32,6 +35,7 @@ export const blogData = [
   {
     id: 4,
     title: "Optimizing React Performance with Memoization",
+    slug: "optimizing-react-performance-with-memoization",
     date: "April 28, 2026",
     author: "Addy Osmani",
     category: "Performance",
@@ -42,6 +46,7 @@ export const blogData = [
   {
     id: 5,
     title: "Building Accessible UI Components with React",
+    slug: "building-accessible-ui-components",
     date: "April 20, 2026",
     author: "Marcy Sutton",
     category: "UI/UX",
@@ -52,6 +57,7 @@ export const blogData = [
   {
     id: 6,
     title: "Testing React Components with Vitest & RTL",
+    slug: "testing-react-components-with-vitest-rtl",
     date: "April 12, 2026",
     author: "Testing Master",
     category: "Testing",
@@ -62,6 +68,7 @@ export const blogData = [
   {
     id: 7,
     title: "The Power of Tailwind CSS in React Projects",
+    slug: "the-power-of-tailwind-css",
     date: "April 05, 2026",
     author: "Adam Wathan",
     category: "UI/UX",
@@ -72,6 +79,7 @@ export const blogData = [
   {
     id: 8,
     title: "React Router v7: The Future of Routing",
+    slug: "react-router-v7-the-future-of-routing",
     date: "March 28, 2026",
     author: "Michael Jackson",
     category: "Ecosystem",
@@ -82,6 +90,7 @@ export const blogData = [
   {
     id: 9,
     title: "TypeScript with React: Type-Safe Components",
+    slug: "typescript-with-react-type-safe-components",
     date: "March 20, 2026",
     author: "Anders Hejlsberg",
     category: "Ecosystem",
@@ -92,6 +101,7 @@ export const blogData = [
   {
     id: 10,
     title: "Advanced Custom Hooks: Reusing Logic",
+    slug: "advanced-custom-hooks-reusing-logic",
     date: "March 15, 2026",
     author: "Sophie Alpert",
     category: "Hooks",
@@ -102,6 +112,7 @@ export const blogData = [
   {
     id: 11,
     title: "React and the Web Animations API",
+    slug: "react-and-the-web-animations-api",
     date: "March 05, 2026",
     author: "Sarah Drasner",
     category: "Performance",
@@ -112,6 +123,7 @@ export const blogData = [
   {
     id: 12,
     title: "Micro-Frontends with React and Module Federation",
+    slug: "micro-frontends-with-react",
     date: "February 25, 2026",
     author: "Zack Jackson",
     category: "Architecture",
@@ -122,6 +134,7 @@ export const blogData = [
   {
     id: 13,
     title: "React Suspense for Data Fetching",
+    slug: "react-suspense-for-data-fetching",
     date: "February 15, 2026",
     author: "Sebastian Markbåge",
     category: "Architecture",
@@ -132,6 +145,7 @@ export const blogData = [
   {
     id: 14,
     title: "Error Boundaries: Handling Crashes Gracefully",
+    slug: "error-boundaries-handling-crashes",
     date: "February 05, 2026",
     author: "Brian Vaughn",
     category: "UI/UX",
@@ -142,6 +156,7 @@ export const blogData = [
   {
     id: 15,
     title: "SEO Best Practices for React Applications",
+    slug: "seo-best-practices-for-react",
     date: "January 25, 2026",
     author: "Google Search Central",
     category: "Ecosystem",
@@ -152,6 +167,7 @@ export const blogData = [
   {
     id: 16,
     title: "The Rise of React Native in 2026",
+    slug: "rise-of-react-native-2026",
     date: "January 15, 2026",
     author: "Meta Engineering",
     category: "Ecosystem",
@@ -162,6 +178,7 @@ export const blogData = [
   {
     id: 17,
     title: "Effective Data Fetching with TanStack Query",
+    slug: "effective-data-fetching-tanstack-query",
     date: "January 05, 2026",
     author: "Tanner Linsley",
     category: "State Management",
@@ -172,6 +189,7 @@ export const blogData = [
   {
     id: 18,
     title: "Internationalization (i18n) in React",
+    slug: "internationalization-i18n-in-react",
     date: "December 20, 2025",
     author: "Global Developer",
     category: "UI/UX",
@@ -182,6 +200,7 @@ export const blogData = [
   {
     id: 19,
     title: "React Design Patterns for Scalability",
+    slug: "react-design-patterns-scalability",
     date: "December 10, 2025",
     author: "Addy Osmani",
     category: "Architecture",
@@ -192,6 +211,7 @@ export const blogData = [
   {
     id: 20,
     title: "The Future of React: Trends to Watch",
+    slug: "future-of-react-trends-to-watch",
     date: "December 01, 2025",
     author: "React Core Team",
     category: "Ecosystem",

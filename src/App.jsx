@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Login from './components/Login';
 import CartModal from './components/CartModal';
@@ -30,6 +30,33 @@ function App() {
   const handleLogout = () => {
     setUser(null);
     sessionStorage.removeItem('aura_active_user');
+  };
+
+  // Handle Hash Routing for Blogs
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash && hash !== 'blog') {
+        const blog = blogData.find(b => b.slug === hash);
+        if (blog) {
+          setActiveBlog(blog);
+        }
+      } else {
+        setActiveBlog(null);
+      }
+    };
+
+    handleHashChange();
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const openBlog = (blog) => {
+    window.location.hash = blog.slug;
+  };
+
+  const closeBlog = () => {
+    window.location.hash = 'blog';
   };
 
   const addToCart = (item) => {
@@ -163,7 +190,7 @@ function App() {
 
       <BlogModal
         isOpen={!!activeBlog}
-        onClose={() => setActiveBlog(null)}
+        onClose={closeBlog}
         blog={activeBlog}
       />
 
@@ -364,7 +391,7 @@ function App() {
             </div>
             <div className="blog-grid">
               {blogData.map((blog) => (
-                <div key={blog.id} className="blog-card glass-card" onClick={() => setActiveBlog(blog)}>
+                <div key={blog.id} className="blog-card glass-card" onClick={() => openBlog(blog)}>
                   <div className="blog-card-img-wrapper">
                     <div className="blog-category-tag">{blog.category}</div>
                     <img src={blog.image} alt={blog.title} className="blog-card-img" />
